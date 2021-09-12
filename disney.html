@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>迪士尼粉絲大會考</title>
+    <link rel="icon" type="image/png" href="image/mickey mouse.png"/>
+    <style>
+        @font-face{
+        font-family: 'FakePearl-Regular';
+        src: url(https://cdn.jsdelivr.net/gh/max32002/FakePearl@1.1/webfont/FakePearl-Regular.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/max32002/FakePearl@1.1/webfont/FakePearl-Regular.woff) format("woff");}
+        body{
+            font-family: 'FakePearl-Regular';
+            color: #E8EDDF;
+            background: #333533;
+            margin: 0 auto;
+            padding: 0 auto;
+            width: 100%;
+        }
+        header{
+            background: #f5cb5c;
+            width: 100%;
+            height: 45px;
+            top: 0px;
+            position: fixed;
+            /* border: 1px solid red; */
+        }
+        #home{
+            text-align: right;
+            margin-right: 15px;
+            /* border: 1px solid red; */
+        }
+        #home a{
+            color: #333533;
+            font-size: 30px;
+            text-decoration: none;
+            /* border: 1px solid red; */
+        }
+        #home a:hover{
+            color: #ED474A;
+        }
+        h1{
+            color: #ED474A;
+            text-align: center;
+            width: 20%;
+            padding: 15px;
+            border: 4.5px solid #E8EDDF;
+            display: inline-block;
+        }
+        .container{
+            text-align: center;
+            padding-top: 45px;
+            /* border: 1px solid red */
+        }
+        p{
+            text-align: justify;
+            line-height: 28px;
+            width: 65%;
+            margin: auto;
+            padding-bottom: 10px;
+            /* border: 1px solid red; */
+        }
+        h3{
+            color: #f5cb5c;
+            text-align: center;
+            width: 80%;
+            margin: auto;
+            padding: 10px;
+            /* border: 1px solid red; */
+        }
+        section{
+            width: 85%;
+            margin: auto;
+            /* border: 1px solid red; */
+        }
+        fieldset{
+            /* padding: 30px; */
+            border: 2px solid #f5cb5c;
+        }
+        fieldset legend{
+            background: #ED474A;
+            padding: 5px;
+            font-size: 18px;
+            text-align: center;
+            text-transform: capitalize;
+            word-spacing: 2px;
+        }
+        .img01{
+            width: 100%;
+            height: auto;
+            padding-top: 10px;
+            object-fit: contain;
+            /* border: 10px solid #333533; */
+        }
+        .img02{
+            width: 50%;
+            height: auto;
+            padding-top: 10px;
+            object-fit: contain;
+            /* border: 1px solid red; */
+        }
+        iframe{
+            padding: 10px;
+            /* border: 1px solid red; */
+        }
+        .t01{
+            margin: auto;
+        }
+        .t01 tr td{
+            vertical-align: bottom;
+            /* border: 1px solid red; */
+        }
+        .t02{
+            margin: auto;
+        }
+        .t02 tr th{
+            font-weight: lighter;
+            text-align: center;
+            width: 33.333%;
+            /* border: 1px solid red; */
+        }
+        .t02 tr td{
+            width: 100%;
+            /* border: 1px solid red; */
+        }
+        input[type="submit"]{
+            font-family: 'FakePearl-Regular';
+            font-size: 18px;
+            background: #f5cb5c;
+            padding: 10px; 
+            border-radius: 5px;
+            display: inline-block;
+            cursor: pointer;
+            /* border: 1px solid red; */
+        }
+        input[type="submit"]:hover{
+            color: #E8EDDF;
+            background: #ED474A;
+        }
+        #btn{
+            text-align: center;
+            padding: 20px 0px 20px 0;
+            /* border: 1px solid red; */
+        }
+        footer{
+            color: #E8EDDF;
+            width: 100%;
+            text-align: center;
+            padding-bottom: 10px;
+            /* bottom: 0px; */
+            /* border: 1px solid red; */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="home">
+            <a href="homepage.html">&#9751;</a> 
+        </div>
+    </header>
+    <div class="container">
+        <h1>迪士尼粉絲大會考</h1>
+    </div>
+    <p>
+     從小看迪士尼的動畫長大？聽到迪士尼的相關資訊會興奮不已？忍不住會關注迪士尼的消息動向，不想漏掉任何一手訊息？迪士尼的經典歌曲幾乎都聽過，哼上幾句也難不倒你？甚至被大家公認為迪士尼博士？馬上來測驗看看你是不是貨真價實的迪士尼鐵粉，展現累積至今的迪士尼知識～
+    </p>
+    <h3>準備好就來接受挑戰吧 !</h3>
+    <br>
+    <form action="#" method="post" autocomplete="on">
+    <section>
+        <!-- question01 ok, need to check layout -->
+        <fieldset>
+            <legend> &nbsp; Q1 哪一部迪士尼動畫獲得第一座奧斯卡獎? &nbsp; </legend>
+            <table class="t01">
+                <tr>
+                    <td>
+                        <input type="radio" name="q01" value="sleeping beauty"> 睡美人 
+                        <img src="image/sleeping beauty.jpeg" class="img01" alt="Sleeping Beauty">
+                    </td>
+                    <td>
+                        <input type="radio" name="q01" value="snowwhite"> 白雪公主 
+                        <img src="image/snow white.jpeg" class="img01" alt="Snow White">
+                    </td>
+                    <td>
+                        <input type="radio" name="q01" value="lionking"> 獅子王
+                        <img src="image/lion king.jpeg" class="img01" alt="The Lion King">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <br>
+         <!-- question02 ok, need to check layout -->
+         <fieldset>
+            <legend> &nbsp; Q2 哪一首歌沒有出現在 &lt; 阿拉丁 &gt; 裡? &nbsp; </legend>
+            <table class="t01">
+                <tr>
+                    <td>
+                        <input type="radio" name="q02" value="partofyourworld"> Part of Your World 
+                    </td>
+                    <td>
+                        <input type="radio" name="q02" value="wholenewworld"> A Whole New World
+                    </td>
+                    <td>
+                        <input type="radio" name="q02" value="friendlikeme"> A Friend Like Me
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <br>
+        <!-- question03 ok, need to check layout -->
+        <fieldset>
+            <legend> &nbsp; Q3 哪一部動畫電影是第一次與皮克斯合作的作品? &nbsp; </legend>
+            <table class="t01">
+                <tr>
+                    <td>
+                        <input type="radio" name="q03" value="buglife"> 蟲蟲危機 
+                        <img src="image/bug life.jpeg" class="img01" alt="A Bug's Life">
+                    </td>
+                    <td>
+                        <input type="radio" name="q03" value="toystory"> 玩具總動員
+                        <img src="image/toy story.jpeg" class="img01" alt="Toy Story">
+                    </td>
+                    <td>
+                        <input type="radio" name="q03" value="findingnemo"> 海底總動員
+                        <img src="image/finding nemo.jpg" class="img01" alt="Finding Nemo">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <br>
+         <!-- question04 ok, need to check layout -->
+         <fieldset>
+            <table class="t02">
+                <tr>
+                    <legend> &nbsp; Q4 出現在片頭的迪士尼-皮克斯logo的檯燈叫什麼名字? &nbsp; </legend>
+                    <th>
+                    <input type="radio" name="q04" value="luxojr"> Luxo Jr.
+                    </th>
+                    <th>
+                    <input type="radio" name="q04" value="a113"> A113
+                    </th>
+                    <th>
+                    <input type="radio" name="q04" value="2319"> 2319
+                    </th>
+                </tr>   
+                    <tr>
+                    <td colspan="3" align="center">
+                    <img src="image/luxo jr.jpg" class="img02" alt="Luxo Jr.">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <br>
+         <!-- question05 ok, need to check layout -->
+         <fieldset>
+            <legend> &nbsp; Q5 全球總共有幾座迪士尼樂園? &nbsp; </legend>
+            <table class="t01">
+                <tr>
+                    <td>
+                        <input type="radio" name="q05" value="four"> 4 
+                    </td>
+                    <td>
+                        <input type="radio" name="q05" value="five"> 5
+                    </td>
+                    <td>
+                        <input type="radio" name="q05" value="six"> 6
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <br>
+         <!-- question06 ok, need to check layout -->
+         <fieldset>
+            <legend> &nbsp; Q6 &lt; 冰雪奇緣 &gt; 的安娜是由哪位演員配音? &nbsp; </legend>
+            <table class="t01">
+                <tr>
+                    <td>
+                        <input type="radio" name="q06" value="kristenbell"> 克莉絲汀·貝爾
+                    </td> 
+                    <td>
+                        <input type="radio" name="q06" value="idinamenzel"> 伊迪娜·曼佐
+                    </td> 
+                    <td>
+                        <input type="radio" name="q06" value="aurora"> 歐若拉
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <br>
+         <!-- question07 ok, need to check layout -->
+         <fieldset>
+            <legend> &nbsp; Q7 哪一位迪士尼公主是以真實人物為雛型? &nbsp; </legend>
+            <table class="t01">
+                <tr>
+                    <td>
+                        <input type="radio" name="q07" value="cinderella"> 仙度瑞拉 
+                        <img src="image/cinderella.jpg" class="img01" alt="Cinderella">
+                    <td>
+                        <input type="radio" name="q07" value="jasmine"> 茉莉公主 
+                        <img src="image/jasmine.jpg" class="img01" alt="Jasmine">
+                    </td>
+                    <td>
+                        <input type="radio" name="q07" value="pocahontas"> 寶嘉康蒂
+                        <img src="image/pocahontas.jpg" class="img01" alt="Pocahontas">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <br>
+        <!-- question08 ok, need to check layout -->
+        <fieldset>
+            <table class="t02">
+                <tr>
+                    <legend> &nbsp; Q8 &lt; 彼得潘 &gt; 中，溫蒂的寵物狗叫什麼名字? &nbsp; </legend>
+                    <th>
+                    <input type="radio" name="q08" value="nana"> 娜娜
+                    </th>
+                    <th>
+                    <input type="radio" name="q08" value="fluff"> 花花
+                    </th>
+                    <th>
+                    <input type="radio" name="q08" value="grey"> 小灰
+                    </th>
+                </tr>   
+                    <tr>
+                    <td colspan="3" align="center">
+                    <img src="image/nana.jpg" class="img02" alt="Nana">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <br>
+         <!-- question09 ok, need to check layout -->
+        <fieldset>
+            <table class="t02">
+                <tr>
+                    <legend> &nbsp; Q9 下方插曲是出現在哪部電影中? &nbsp; </legend>
+                    <th>
+                    <input type="radio" name="q09" value="fantasia"> 幻想曲
+                    </th>
+                    <th>
+                    <input type="radio" name="q09" value="pinocchio"> 皮諾丘
+                    </th>
+                    <th>
+                    <input type="radio" name="q09" value="cinderella"> 灰姑娘
+                    </th>
+                </tr>   
+                    <tr>
+                    <td colspan="3" align="center">
+                    <iframe src="https://open.spotify.com/embed/track/0JIPxQiFYgnPfQDuAZTnHk" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <br>
+        <!-- question10 ok, need to check layout -->
+        <fieldset>
+            <table class="t02">
+                <tr>
+                    <legend> &nbsp; Q10 下列哪一位是 &lt; 小美人魚 &gt; 愛麗兒和艾瑞克的女兒? &nbsp; </legend>
+                    <th>
+                    <input type="radio" name="q10" value="oceania"> 歐西亞納 
+                    </th>
+                    <th>
+                    <input type="radio" name="q10" value="coraline"> 克羅琳 
+                    </th>
+                    <th>
+                    <input type="radio" name="q10" value="melody"> 美樂蒂 
+                    </th>
+                </tr>   
+                    <tr>
+                    <td colspan="3" align="center">
+                    <img src="image/melody.jpg" class="img02" alt="Melody">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </section>
+    <div id="btn">
+        <input type="submit" value="送出答案">
+    </div>
+    </form>
+</body>
+</html>
+<!-- Reference: https://www.seventeen.com/celebrity/celeb-quizzes/a25053/disney-trivia-quiz/ -->

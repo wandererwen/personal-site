@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wen Peng</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Homemade+Apple&family=Quicksand&display=swap');
+        
+        body{
+            font-family: 'Quicksand', sans-serif;
+            background: #EAF4F4;
+            margin: 0 auto;
+            padding: 0 auto;
+            width: 100%;
+            position: absolute;
+        }
+        header{
+            background: #6B9080;
+            width: 100%;
+            top: 0px;
+            padding: 10px 0px 50px 0px;
+            /* border: 1px solid red; */
+        }
+        #hello{
+            color: whitesmoke;
+            font-family: 'Homemade Apple', cursive;
+            font-size: 36px;
+            text-shadow: 1px 3px 10px silver;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* border: 1px solid red; */
+        }
+        #current{
+            color: whitesmoke;
+            text-align: center;
+            /* border: 1px solid red; */
+        }
+        #menu a{
+            text-decoration: none;
+        }
+        #menu a:link{color: #333533;}
+        #menu a:visited{color: #A4C3B2;}
+        #menu a:active{color: #CCE3DE;}
+        
+        #menu ul{
+            text-align: right;
+            margin-right: 20px;
+            /* border: 1px solid red; */
+        }
+        #menu li{
+            font-size: 18px;
+            font-weight: bold;
+            list-style: none;
+            display: inline-block;
+        }
+        .logo{
+            color: whitesmoke;
+            font-family: 'Dancing Script', cursive;
+            font-size: 18px;
+            letter-spacing: 2px;
+            text-align: center;
+            text-decoration: none;
+            line-height: 50px;
+            text-shadow: 1px 1px 5px #000;
+            background: #333533;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            top: 10px;
+            left: 15px;
+            position: fixed;
+            /* box-shadow: 1px 1px 3px silver; */
+        }
+        section{
+            width: 60%;
+            margin: auto;
+            padding-bottom: 70px;
+            /* border: 1px solid red; */
+        }
+        h1{
+            font-family: 'Homemade Apple', cursive;
+        }
+        p{
+            color: #333533;
+            font-size: 14px;
+            text-align: justify;
+        }
+        img{
+            width: 80%;
+            height: auto;
+            object-fit: contain;
+            overflow: hidden;
+            /* border: 1px solid red; */
+        }
+        a{
+            color: #333533;
+            text-decoration: none;
+        }
+        h3{
+            text-transform: uppercase;
+        }
+        #footer{
+            background: #6B9080;
+            width: 100%;
+            bottom: 0px;
+            position: fixed;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            /* border: 1px solid red; */
+        }
+        .email{
+            color: #333533;
+            display: inline;
+            text-align: left;
+            margin-left: 30px;
+            float: left;
+            /* border: 1px solid red; */
+        }
+        .copyright{
+            color: #222;
+            font-size: 14px;
+            text-align: right;
+            margin-right: 30px;
+            float: right; 
+            /* border: 1px solid red; */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="menu">
+        <ul>
+            <li><a href="#aboutme">about</a></li> &nbsp; &nbsp;
+            <li><a href="#works">works</a></li> &nbsp; &nbsp;
+            <li><a href="#resume" name="top">resume</a></li>
+        </ul>
+        </nav>
+        <a role="button" class="logo" href="#top">WP</a>
+        <div id="hello">
+            Hello, <br> &nbsp; &nbsp; &nbsp; I'm Wen Peng
+        </div>
+        <div id="current">tech addict / cinephile / music lover / traveler / foodie / multilingual</div>
+    </header>
+    <section>
+        <a name="aboutme"><h1>about me</h1></a>
+        <p>Taiwanese grown up as a third culture kid in Bangkok, Thailand and have lived in Lille, France for a year. Multilingual of Chinese, English, Thai, and French with various backgrounds in arts, literature, film, medical and tourism. Wandering between cities, listening to different music genres and film watching are my ways to explore and experience the world.</p>
+        <p>Specialized in cross-cultural communication with experiences in CRM and cross-functional project management. Received high recognition for excellence in customer success and proven skills in leadership, negotiating and problem-solving. A fast learner capable of working independently and as part of a team. Adaptable to new and fast-paced environments. Currently learning to code and design websites.</p>
+        <a name="works"><h1>works</h1></a>
+        <table>
+            <th>
+                <a href="disney.html" target="_blank">
+                    <img src="image/disney.png"  alt="Disney Trivia">
+                    <h3>Disney Trivia Quiz</h3>
+                </a>
+            </th>
+            <th>
+                <a href="film.html" target="_blank">
+                    <img src="image/imdb.png" alt="Top 10 Films">
+                    <h3>Top 10 Films of All Time</h3>
+                </a>
+            </th>
+        </table>
+        <a name="resume" href="https://www.linkedin.com/in/yuwenp/" target="_blank"><h1>resume</h1></a>
+    
+   </section>
+    <footer id="footer">
+        <div class="email">wenpeng425@gmail.com</div>
+        <div class="copyright">Copyright &copy; Wen Peng 2021</div>
+    </footer>
+</body>
+</html>

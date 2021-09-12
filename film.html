@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Films of All Time</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #C16E70;
+            margin: 0 auto;
+            padding: 0 auto;
+            width: 100%;
+        }
+        header{
+            background: #151E3F;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+            width: 100%;
+            padding: 20px;
+            display: block;
+            /* border: 1px solid red; */
+        }
+        .title{
+            font-size: 50px;
+            color: #F2F3D9;
+            text-align: center;
+            text-transform: capitalize;
+            /* border: 1px solid red; */
+        }
+        .subtitle{
+            font-size: 20px;
+            color: #F2F3D9;
+            text-align: center;
+            margin-top: 15px;
+            /* border: 1px solid red; */
+        }
+        table{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 10px;
+            /* border: 1px solid red; */
+        }
+        table tr td{
+            align-content: center;
+            padding: 15px;
+            /* border: 1px solid red; */
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            /* border: 1px solid red; */
+        }
+        .card{
+            width: 330px;
+            height: 550px;
+            overflow: auto;
+            background: white;
+            border-radius: 5px;
+            padding: 20px;
+            box-sizing: content-box;
+            position: relative;
+            box-shadow: 0px 0px 5px #000;
+            display: inline-block;
+            /* border: 1px solid red; */
+        }
+        .card:hover{
+            box-shadow: 10px 20px 20px #333;
+        }
+        h1{
+            color: #151E3F;
+            text-transform: uppercase;
+            font-size: 24px;
+            word-spacing: -5px;
+            /* border: 1px solid red; */
+        }
+        .info{
+            color: #DC9182;
+            margin: 10px auto;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed #ccc;
+            white-space: nowrap;
+            letter-spacing: -1px;
+        }
+        .content{
+            line-height: 120%;
+        }
+        span{
+            font-weight: bold;
+        }
+        p{
+            text-align: justify;
+            font-style: italic;
+            word-spacing: -5.5px;
+            letter-spacing: -1px;
+            /* border: 1px solid red; */
+        }
+        .pic{
+            width: 300px;
+            height: 150px;
+            background: #4F5D75;
+            margin: 0 auto;
+            /* border: 1px solid red; */
+        }
+        .pic img{
+            width: 100%;
+            /* border: 1px solid red; */
+        }
+        .circle{
+            background: goldenrod;
+            background-position: left;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            position: absolute;
+            margin: 0 0 0 145px;
+            top: 535px;
+            /* border: 1px solid red; */
+        }
+        .number{
+            color: goldenrod;
+            font-weight: bold;
+            text-align: center;
+            margin: 25% auto;
+            transition: .3s;
+        }
+        .number:hover{
+            color: lightgoldenrodyellow;
+            font-weight: bold;
+            text-align: center;
+            text-shadow: 0px 0px 3px yellow,
+            0 0 6px silver;
+        }
+        input.checkbox{
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            margin: 0 0 0 303px;
+            top: 20px;
+        }
+        label{
+            opacity: 100%;
+            color: transparent;
+            font-size: 24px;
+            font-weight: bold;
+            /* text-transform: uppercase; */
+            writing-mode: vertical-rl;
+            position: absolute;
+            margin: 0 0 0 300px;
+            top: 55px;
+            /* border: 1px solid red; */
+        }
+        input:checked + label{
+            /* color: #DC9182; */
+            color: goldenrod;
+            text-shadow: 2px 2px #aaa;
+            transition-duration: 1s;
+            opacity: 0.01;
+        }
+        section{
+            text-align: center;
+            padding: 10px 0 20px 0;
+            /* border: 1px solid red; */
+        }
+        .btn{
+            color: lightgoldenrodyellow;
+            font-size: 20px;
+            text-decoration: none;
+            background: #151E3F;
+            box-shadow: 1px 1px 0 #333, inset 1px 1px 0 #333;
+            text-shadow: 0 -1px 0 #000;
+            position: relative;
+            padding: 10px;
+            display: inline-block;
+            transition: .3s;
+        }
+        .btn:hover{
+            color: #4F5D75;
+            font-size: 20px;
+            font-weight: bold;
+            /* background: #151E3F; */
+            box-shadow: 5px 5px 0 0, inset 5px 5px 0 0;
+            text-shadow: 6px 6px #000, 5px 5px #000, 4px 4px #000, 3px 3px #000, 2px 2px #000, 1px 1px #000;
+            position: relative;
+            padding: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title">Top 10 Films of All Time</div>
+        <div class="subtitle">Which films have you watched?</div>
+    </header>
+    <table>
+        <tr>
+            <td>
+                <div class="card one">
+                <input type="checkbox" class="checkbox" id="watched">
+                <label for="watched">watched!</label>
+                <h1>The Shawshank Redemption</h1>
+                <div class="info">142 min | Drama | 1994</div>
+                <div class="content">
+                <span class="dir">Director:</span> Frank Darabont <br>
+                <span class="stars">Stars:</span> Tim Robbins, Morgan Freeman, Bob Gunton, William Sadler <br> 
+                <p>Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency. <br>
+                &nbsp;</p>
+                </div>
+                    <figure class="pic">
+                        <img src="image/Shawshank-Redemption.jpg" alt="The Shawshank Redemption">
+                    </figure>
+                    <div class="circle">
+                         <div class="number">1</div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="card two">
+                    <input type="checkbox" class="checkbox" id="watched">
+                    <label for="watched">watched!</label>
+                    <h1>The Godfather <br>
+                        &nbsp;
+                    </h1>
+                    <div class="info">175 min | Crime, Drama | 1972</div>
+                    <div class="content">
+                    <span class="dir">Director:</span> Francis Ford Coppola <br>
+                    <span class="stars">Stars:</span> Marlon Brando, Al Pacino, James Caan, Diane Keaton <br>
+                    &nbsp;
+                    <p>An organized crime dynasty's aging patriarch transfers control of his clandestine empire to his reluctant son.<br>
+                    &nbsp;<br>
+                    &nbsp;</p>
+                    </div>
+                    <figure class="pic">
+                        <img src="image/The-Godfather.jpg" alt="The Godfather">
+                    </figure>
+                    <div class="circle">
+                        <div class="number">2</div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="card three">
+                    <input type="checkbox" class="checkbox" id="watched">
+                    <label for="watched">watched!</label>
+                    <h1>The Dark Knight<br>
+                        &nbsp;</h1>
+                    <div class="info">152 min | Action, Drama | 2008</div>
+                    <div class="content">
+                    <span class="dir">Director:</span> Christopher Nolan <br>
+                    <span class="stars">Stars:</span> Christian Bale, Heath Ledger, Aaron Eckhart <br> 
+                    <p>When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.<br>
+                    &nbsp;</p>
+                    </div>
+                    <figure class="pic">
+                        <img src="image/The-Dark-Knight.jpg" alt="The Dark Knight">
+                    </figure>
+                    <div class="circle">
+                        <div class="number">3</div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="card four">
+                    <input type="checkbox" class="checkbox" id="watched">
+                    <label for="watched">watched!</label>
+                    <h1>The Godfather: <br>
+                        Part II</h1>
+                    <div class="info">202 min | Crime, Drama | 1974</div>
+                    <div class="content">
+                    <span class="dir">Director: </span>Francis Ford Coppola <br>
+                    <span class="stars">Stars:</span> Al Pacino, Robert De Niro, Robert Duvall, Diane Keaton <br>
+                    &nbsp;
+                    <p>The early life and career of Vito Corleone in 1920s New York City is portrayed, while his son, Michael, expands and tightens his grip on the family crime syndicate.<br>
+                        &nbsp;</p>
+                    </div>
+                    <figure class="pic">
+                        <img src="image/The-Godfather-II.jpg" alt="The Godfather Part II">
+                    </figure>
+                    <div class="circle">
+                        <div class="number">4</div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="card five">
+                    <input type="checkbox" class="checkbox" id="watched">
+                    <label for="watched">watched!</label>
+                    <h1>12 Angry Men<br>
+                        &nbsp;</h1>
+                    <div class="info">96 min | Crime, Drama | 1957</div>
+                    <div class="content">
+                    <span class="dir">Director:</span> Sidney Lumet <br>
+                    <span class="stars">Stars:</span> Henry Fonda, Lee J. Cobb, Martin Balsam, John Fiedler<br>
+                    &nbsp;
+                    <p>A jury holdout attempts to prevent a miscarriage of justice by forcing his colleagues to reconsider the evidence. <br>
+                        &nbsp;<br>
+                        &nbsp;</p>
+                    </div>
+                    <figure class="pic">
+                        <img src="image/12-Angry-Men.jpg" alt="12 Angry Men">
+                    </figure>
+                    <div class="circle">
+                        <div class="number">5</div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="card six">
+                    <input type="checkbox" class="checkbox" id="watched">
+                    <label for="watched">watched!</label>
+                    <h1>The Lord of the Rings: The Return of the King</h1>
+                    <div class="info">201 min | Adventure, Drama | 2003</div>
+                    <div class="content">
+                    <span class="dir">Director:</span> Peter Jackson <br>
+                    <span class="stars">Stars:</span> Elijah Wood, Viggo Mortensen, Ian McKellen, Orlando Bloom <br> 
+                    <p>Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.<br>
+                        &nbsp;</p>
+                    </div>
+                    <figure class="pic">
+                        <img src="image/The-Lord-of-the-Rings-The-Return-of-the-King.jpg" alt="The Lord of The Rings: The Return of The Kings">
+                    </figure>
+                    <div class="circle">
+                        <div class="number">6</div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="card seven">
+                    <input type="checkbox" class="checkbox" id="watched">
+                    <label for="watched">watched!</label>
+                    <h1>Pulp Fiction<br>
+                        &nbsp;</h1>
+                    <div class="info">154 min | Crime, Drama | 1994</div>
+                    <div class="content">
+                    <span class="dir">Director:</span> Quentin Tarantino <br>
+                    <span class="stars">Stars:</span> John Travolta, Uma Thurman, Samuel L. Jackson, Bruce Willis <br>
+                    &nbsp;
+                    <p>The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.<br>
+                        &nbsp;</p>
+                    </div>
+                    <figure class="pic">
+                        <img src="image/Pulp-Fiction.jpg" alt="Pulp Fiction">
+                    </figure>
+                    <div class="circle">
+                        <div class="number">7</div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="card eight">
+                    <input type="checkbox" class="checkbox" id="watched">
+                    <label for="watched">watched!</label>
+                    <h1>Schindler's List<br>
+                        &nbsp;</h1>
+                    <div class="info">195 min | Drama, History | 1993</div>
+                    <div class="content">
+                    <span class="dir">Director:</span> Steven Spielberg <br>
+                    <span class="stars">Stars:</span> Liam Neeson, Ralph Fiennes, Ben Kingsley <br>
+                    &nbsp;
+                    <p>In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis </p>
+                    </div>
+                    <figure class="pic">
+                        <img src="image/Schindlers-List.jpg" alt="Schindler's List">
+                    </figure>
+                    <div class="circle">
+                        <div class="number">8</div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="card nine">
+                    <input type="checkbox" class="checkbox" id="watched">
+                    <label for="watched">watched!</label>
+                    <h1>Inception<br>
+                        &nbsp;</h1>
+                    <div class="info">148 min | Action, Sci-Fi | 2010</div>
+                    <div class="content">
+                    <span class="dir">Director:</span> Christopher Nolan <br>
+                    <span class="stars">Stars:</span> Leonardo DiCaprio, Joseph Gordon-Levitt, Elliot Page, Ken Watanabe <br> 
+                    <p>A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.<br>
+                        &nbsp;</p>
+                    </div>
+                    <figure class="pic">
+                        <img src="image/Inception.jpg" alt="Inception">
+                    </figure>
+                    <div class="circle">
+                        <div class="number">9</div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <div class="container">
+        <div class="card ten">
+            <input type="checkbox" class="checkbox" id="watched">
+            <label for="watched">watched!</label>
+            <h1>Fight Club <br>
+                &nbsp;
+            </h1>
+            <div class="info">139 min | Drama | 1999</div>
+            <div class="content">
+            <span class="dir">Director:</span> David Fincher <br>
+            <span class="stars">Stars:</span> Brad Pitt, Edward Norton, Meat Loaf, Zach Grenier <br>
+            &nbsp; 
+            <p>An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.<br>
+                &nbsp;</p>
+            </div>
+            <figure class="pic">
+                <img src="image/Fight-Club.jpg" alt="Fight Club">
+            </figure>
+            <div class="circle">
+                <div class="number">10</div>
+            </div>
+        </div>
+    </div>
+    <section>
+    <a role="button" class="btn" href="" target="_blank">Submit</a>
+    </section>
+    <footer></footer>
+</body>
+</html>
+<!-- Reference: https://www.imdb.com/search/title/?groups=top_250&sort=user_rating-->
