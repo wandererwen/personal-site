@@ -1,4 +1,4 @@
-## 個人練習 Purpose
+## 個人練習 Practice
 First website built with HTML and CSS after one week into learning.
 
 學習一週 HTML 與 CSS 所切的第一個網頁。
